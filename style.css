@@ -46,13 +46,13 @@ html{
     border-radius: 1rem;
     color:gold;
     border: none;
-    outline: none;
+    outline:none;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 2rem;
     font-size: 5rem;
     box-shadow: 1rem 1rem 1rem rgba(43, 1, 54, 0.7);
     /* filter: grayscale(); */
-    
+
     /* transition: filter 0.4s ease-in-out; */
     transition: transform 0.4s ease-in-out;
 }
@@ -80,8 +80,13 @@ html{
     .container{
         height: 40vh;
     }
+}
 
-    #btn{
-        font-size: 3rem;
-    }
+.no-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
