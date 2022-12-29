@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+   
+}
+
+.container{
+    width: 90%;
+    min-height: 80vh;
+    background-color: #4E2A61;
+    margin:3rem auto;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* differece b/w items and content */
+    box-shadow: 0 0rem 1rem rgba(9, 24, 24, 0.5);
+}
+
+
+
+#heading{
+    font-size:3rem;
+   height: 10rem;
+   font-family:"Dancing Script" , sans-serif;
+   padding: 3rem;
+   color: aliceblue;
+}
+
+
+
+
+#btn{
+    height: 20rem;
+    width: 25rem;
+    font-family:"Dancing Script" , sans-serif;
+    border-radius: 1rem;
+    color:gold;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    font-size: 5rem;
+    box-shadow: 1rem 0.5rem 1rem rgba(13, 37, 37, 0.8);
+    /* filter: grayscale(); */
+    transition: transform 0.4s ease-in-out;
+}
+
+#btn:hover{
+    /* filter: grayscale(); */
+    cursor: pointer;
+    /* filter: grayscale(1); */
+    transform: translate(0 ,-0.7rem) scale(1.01);
+}
+
+#name{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 3rem;
+}
+
+@media screen and (max-width:600px) {
+    #btn{
+        width: 15rem;
+        height: 10rem;
+    }
+    
+    .container{
+        height: 40vh;
+    }
+
+    #btn{
+        font-size: 3rem;
+    }
+}
