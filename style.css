@@ -23,7 +23,7 @@ html{
     /* justify-content: center; */
     align-items: center;
     /* differece b/w items and content */
-    box-shadow: 0 0rem 1rem rgba(9, 24, 24, 0.5);
+    box-shadow: 0 0rem 1rem rgba(15, 46, 46, 0.5);
 }
 
 
@@ -50,16 +50,17 @@ html{
     background-color: rgba(255, 255, 255, 0.2);
     padding: 2rem;
     font-size: 5rem;
-    box-shadow: 1rem 0.5rem 1rem rgba(13, 37, 37, 0.8);
+    box-shadow: 1rem 0.5rem 1rem rgba(20, 81, 81, 0.8);
     /* filter: grayscale(); */
+    
+    transition: filter 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
 }
 
 #btn:hover{
-    /* filter: grayscale(); */
     cursor: pointer;
-    /* filter: grayscale(1); */
-    transform: translate(0 ,-0.7rem) scale(1.01);
+    /* filter: grayscale(0); */
+    transform: translate(0 ,-0.7rem) scale(1.02);
 }
 
 #name{
@@ -71,8 +72,8 @@ html{
 
 @media screen and (max-width:600px) {
     #btn{
-        width: 15rem;
-        height: 10rem;
+        width: 20rem;
+        height: 15rem;
     }
     
     .container{
