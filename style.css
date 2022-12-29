@@ -15,7 +15,7 @@ html{
 .container{
     width: 90%;
     min-height: 80vh;
-    background-color: #63307f;
+    background-color: #4c0672;
     margin:3rem auto;
     border-radius: 2rem;
     display: flex;
@@ -64,6 +64,7 @@ html{
 }
 
 #name{
+    text-align: center;
     margin-top: 2rem;
     font-size: 2rem;
     color: aliceblue;
