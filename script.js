@@ -1,6 +1,10 @@
 const btn = document.getElementById("btn");
 const emojiName = document.getElementById("name");
 
+addEventListener("contextmenu" , (e)=>{
+    e.preventDefault();
+}) ;
+
 
 const emoji = [];
 
@@ -15,7 +19,6 @@ async function getEmoji() {
             emojiNam: data[i].character,
             emojiCode: data[i].unicodeName,
             category: data[i].group
-
         });
     }
 }
@@ -30,3 +33,4 @@ btn.addEventListener("click", () => {
     btn.innerText = emoji[randomNum].emojiNam;
     emojiName.innerText = emoji[randomNum].emojiCode;
 });
+
